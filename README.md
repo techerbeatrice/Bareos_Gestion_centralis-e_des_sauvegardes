@@ -3,11 +3,6 @@
 ___
 
 🔬 Installation, configuration et test de bareos
-Maintenant à toi de jouer.
-
-Reprend la documentation de bareos depuis le début et parcours la attentivement.
-
-En la suivant, procède pas à pas à :
 
 L'installation d'un serveur bareos
 Pour cette mise en pratique, utlises un unique serveur GNU/Linux (qui peut évidemment être une VM) sur lequel tu dois donc installer postgresql (pour le catalogue) ainsi que l'ensemble des composants bareos qui s'installe par le méta-paquet bareos.
@@ -22,3 +17,21 @@ Faire une restauration des données sauvegardées.
 Ajouter un client. Ce client est une deuxième machine (ou VM) sur laquelle tu installes uniquement bareos-fd.
 Configurer le serveur et le client pour que la communication soit possible.
 Lancer une sauvegarde sur le client.
+
+___
+
+**Installation du serveur bareos**
+
+sudo nano /etc/apt/sources.list 
+
+sudo nano /etc/apt/sources.list.d/bareos.list  
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralis-e_des_sauvegardes/assets/138071140/9eeec8af-a9ba-44f6-b64d-a3cea1ab11ee)
+
+
+Passer en root avec _sudo su_ et télécharger la clé avec _sudo wget -q http://download.bareos.org/bareos/release/latest/Ubuntu_22.04.1/Release.key -O- | apt-key add --_  
+
+sudo apt-get install bareos   
+sudo apt-get install --yes bareos.com-director bareos.com-storage bareos.com-filedaemon bareos.com-database-postgresql bareos.com-bconsole   
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralis-e_des_sauvegardes/assets/138071140/3bc781c4-2ade-4e0b-8122-a12295695803)
