@@ -22,13 +22,13 @@ ___
 
 **Installation du serveur bareos sur une vm ubuntu 22.04.1**  
 
-___
+__
 
 **Mettre à jour Ubuntu avant d'installer les packages logiciels. Exécutez les commandes suivantes pour ce faire**    
  
-sudo apt update   
-sudo apt dist-upgrade   
-sudo apt autoremove   
+_sudo apt update_   
+_sudo apt dist-upgrade_   
+_sudo apt autoremove_   
 
 Cela devrait mettre Ubuntu à jour et supprimer tous les packages obsolètes de votre système. C'est également une bonne idée de réinitialiser l'ordinateur une fois la mise à jour terminée.
 ____
@@ -37,7 +37,9 @@ Après avoir mis à niveau Ubuntu, vous devrez **ajouter le référentiel Bareos
 
 Exécutez les instructions ci-dessous pour ajouter le référentiel avec les packages et la clé les plus récents :   
 
-sudo sh -c 'echo "deb http://download.bareos.org/bareos/release/latest//xUbuntu_20.04 /" >> /etc/apt/sources.list.d/bareos.list'
+_sudo sh -c 'echo "deb http://download.bareos.org/bareos/release/latest//xUbuntu_22.04.1 /" >> /etc/apt/sources.list.d/bareos.list'_
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/9a82dbc2-825e-4bc5-b075-586b9b5f4af2)
 
 ____
 
