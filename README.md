@@ -43,9 +43,9 @@ _sudo sh -c 'echo "deb http://download.bareos.org/bareos/release/latest//xUbuntu
 
 ____
 
-Après avoir ajouté le référentiel, exécutez les instructions suivantes pour importer la clé GPG du référentiel :   
+Après avoir ajouté le référentiel, exécutez les instructions suivantes pour **importer la clé GPG du référentiel** :   
 
-sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add -
+_sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add -_  
 
 ____
 
