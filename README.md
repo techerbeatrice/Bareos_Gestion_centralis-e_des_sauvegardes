@@ -52,9 +52,13 @@ _sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/R
 S'affiche le message : _apt-key est obsolète_ et _Gérer les fichiers de trousseaux de clés dans trust.gpg.d_  
 
 Ici Ubuntu veut que vous sépariez les clés GPG   
-C'est un message d’avertissement ; « Gérer les fichiers de trousseaux de clés dans trust.gpg.d ».  
+C'est un message d’avertissement ; « Gérer les fichiers de trousseaux de clés dans trust.gpg.d » et depuis 2020, ajouter une clé GPG pour les dépôts utilisés par apt ne doit plus se faire par le biais de la commande _apt-key_ ; celle-ci est déclaré obsolète ET ne doit plus être utilisée ! 
 
-Ubuntu ne veut pas que vous ajoutiez toutes les clés de signature dans le fichier unique /etc/apt/trusted.gpg. Il suggère d'utiliser un fichier séparé situé dans le répertoire /etc/apt/trusted.gpg.d.    
+Ubuntu ne veut pas que vous ajoutiez toutes les clés de signature dans le fichier unique /etc/apt/trusted.gpg. Il suggère d'utiliser un fichier séparé situé dans le répertoire /etc/apt/trusted.gpg.d.   
+
+donc nouvelle commande à taper : _sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add - | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/bareos.gpg_  
+
+
 ____
 
 sudo apt-get install bareos   
