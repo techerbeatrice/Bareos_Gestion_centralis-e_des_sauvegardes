@@ -20,7 +20,7 @@ Lancer une sauvegarde sur le client.
 
 ___
 
-**Installation du serveur bareos**  
+**Installation du serveur bareos sur une vm ubuntu 22.04.1**  
 
 ___
 
@@ -36,6 +36,8 @@ ____
 Après avoir mis à niveau Ubuntu, vous devrez ajouter le référentiel Bareos et le fichier clé à votre ordinateur. Les packages les plus récents seront mis à disposition sur votre machine dès que son référentiel sera ajouté.   
 
 Exécutez les instructions ci-dessous pour ajouter le référentiel avec les packages et la clé les plus récents :   
+
+sudo sh -c 'echo "deb http://download.bareos.org/bareos/release/latest//xUbuntu_20.04 /" >> /etc/apt/sources.list.d/bareos.list'
 
 ____
 
