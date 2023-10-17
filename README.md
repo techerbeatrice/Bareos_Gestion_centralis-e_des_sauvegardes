@@ -47,6 +47,14 @@ Après avoir ajouté le référentiel, exécutez les instructions suivantes pour
 
 _sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add -_  
 
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/ec25c298-b700-4c08-9630-cec878917d55)
+
+S'affiche le message : _apt-key est obsolète_ et _Gérer les fichiers de trousseaux de clés dans trust.gpg.d_  
+
+Ici Ubuntu veut que vous sépariez les clés GPG   
+C'est un message d’avertissement ; « Gérer les fichiers de trousseaux de clés dans trust.gpg.d ».  
+
+Ubuntu ne veut pas que vous ajoutiez toutes les clés de signature dans le fichier unique /etc/apt/trusted.gpg. Il suggère d'utiliser un fichier séparé situé dans le répertoire /etc/apt/trusted.gpg.d.    
 ____
 
 sudo apt-get install bareos   
