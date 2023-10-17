@@ -30,6 +30,13 @@ sudo apt update
 sudo apt dist-upgrade   
 sudo apt autoremove   
 
+Cela devrait mettre Ubuntu à jour et supprimer tous les packages obsolètes de votre système. C'est également une bonne idée de réinitialiser l'ordinateur une fois la mise à jour terminée.
+____
+
+Après avoir mis à niveau Ubuntu, vous devrez ajouter le référentiel Bareos et le fichier clé à votre ordinateur. Les packages les plus récents seront mis à disposition sur votre machine dès que son référentiel sera ajouté.   
+
+Exécutez les instructions ci-dessous pour ajouter le référentiel avec les packages et la clé les plus récents :   
+
 ____
 
 Passer en root avec _sudo su_ et télécharger la clé avec _sudo wget -q http://download.bareos.org/bareos/release/latest/Ubuntu_22.04.1/Release.key -O- | apt-key add --_  
