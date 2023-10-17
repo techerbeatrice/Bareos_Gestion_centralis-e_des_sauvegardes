@@ -20,14 +20,17 @@ Lancer une sauvegarde sur le client.
 
 ___
 
-**Installation du serveur bareos**
+**Installation du serveur bareos**  
 
-sudo nano /etc/apt/sources.list 
+___
 
-sudo nano /etc/apt/sources.list.d/bareos.list  
+**Mettre à jour Ubuntu avant d'installer les packages logiciels. Exécutez les commandes suivantes pour ce faire**    
+ 
+sudo apt update   
+sudo apt dist-upgrade   
+sudo apt autoremove   
 
-![image](https://github.com/techerbeatrice/Bareos_Gestion_centralis-e_des_sauvegardes/assets/138071140/9eeec8af-a9ba-44f6-b64d-a3cea1ab11ee)
-
+____
 
 Passer en root avec _sudo su_ et télécharger la clé avec _sudo wget -q http://download.bareos.org/bareos/release/latest/Ubuntu_22.04.1/Release.key -O- | apt-key add --_  
 
