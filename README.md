@@ -43,9 +43,13 @@ _sudo sh -c 'echo "deb http://download.bareos.org/bareos/release/latest//xUbuntu
 
 ____
 
-Passer en root avec _sudo su_ et télécharger la clé avec _sudo wget -q http://download.bareos.org/bareos/release/latest/Ubuntu_22.04.1/Release.key -O- | apt-key add --_  
+Après avoir ajouté le référentiel, exécutez les instructions suivantes pour importer la clé GPG du référentiel :   
+
+sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add -
+
+____
 
 sudo apt-get install bareos   
 sudo apt-get install --yes bareos.com-director bareos.com-storage bareos.com-filedaemon bareos.com-database-postgresql bareos.com-bconsole   
 
-![image](https://github.com/techerbeatrice/Bareos_Gestion_centralis-e_des_sauvegardes/assets/138071140/3bc781c4-2ade-4e0b-8122-a12295695803)
+
