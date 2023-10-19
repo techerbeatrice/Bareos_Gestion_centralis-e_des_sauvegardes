@@ -57,7 +57,9 @@ ____
 
 Télécharger la clé et l’ajouter, entrez la commande suivante dans le terminal :
 
-**_wget -q http://download.bareos.org/bareos/release/latest/Debian_12.0/Release.key -O- | apt-key add --_**  
+**_wget -q http://download.bareos.org/bareos/release/latest/Debian_12/Release.key -O- | apt-key add --_**  
+
+https://download.bareos.org/current/Debian_12/Release
 
 ![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/117d2580-6c14-4f14-83cf-5fc11954e79b)
 
@@ -72,12 +74,20 @@ Debian ne veut pas que vous ajoutiez toutes les clés de signature dans le fichi
 
 wget -O /usr/share/keyrings/<un-nom>-archive-keyring.gpg https://depot.example.net/debian/<nom-fichier-cle>.gpg
 
-donc nouvelle commande à taper : **_sudo wget -q http://download.bareos.org/bareos/release/latest/xDebian_12.0/Release.key -O- | sudo apt-key add - | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/bareos.gpg_**   
+donc nouvelle commande à taper : **sudo wget -O /usr/share/keyrings/<bareos-archive-keyring.gpg http://download.bareos.org/bareos/release/latest/Debian_12.0/Release.key -O- | sudo apt-key add - | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/bareos.gpg_**   
 
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/d62a8d5a-dc31-4a74-9442-9c2e6aa7cfd0)
 
 ____
 
 sudo apt-get install bareos   
 sudo apt-get install --yes bareos.com-director bareos.com-storage bareos.com-filedaemon bareos.com-database-postgresql bareos.com-bconsole   
 
+____
+
+**Autre méthode d'installation de Bareos :**    
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/2bbc967d-d551-4806-b043-a9f5d6790c6e)
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/9eecc873-7b23-424c-9d9e-75906121252e)
 
