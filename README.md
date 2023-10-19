@@ -85,9 +85,15 @@ sudo apt-get install --yes bareos.com-director bareos.com-storage bareos.com-fil
 
 ____
 
-**Autre méthode d'installation de Bareos qui ne fonctionne qu'avec debian 11 :**    
+**Autre méthode d'installation de Bareos qui ne fonctionne qu'avec debian 11 :**  
 
 ![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/2bbc967d-d551-4806-b043-a9f5d6790c6e)
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/92875781-053c-46e7-b962-32133208a06c)
+
+
+
+
 
 ![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/9eecc873-7b23-424c-9d9e-75906121252e)
 
