@@ -91,3 +91,9 @@ ____
 
 ![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/9eecc873-7b23-424c-9d9e-75906121252e)
 
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/6ec5b064-b9f8-45cb-b7ee-f77ac0d5dfd9)
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/b301f4ed-5199-4a5a-b141-b69881f24266)
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/5b8eca60-fa1b-4558-9679-d4c1e75fa3ae)
+
