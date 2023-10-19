@@ -24,18 +24,25 @@ ___
 
 __
 
-Faire un _sudo apt-get update && sudo apt upgrade_   
-si refus, passer en root avec la commande _su root_ pour ajouter votre nom d'utilisateur au fichier sudoers de debian pour avoir les droits d'exécuter des commandes   
+Faire un **_sudo apt-get update && sudo apt upgrade_**     
+Si refus, passer en root avec la commande **_su root_** pour ajouter votre nom d'utilisateur au **fichier sudoers** de debian pour avoir les droits d'exécuter des commandes   
 
-pour ajouter mon nom d'utilisateur :  _sudo adduser beatrice sudo_   
+pour ajouter mon nom d'utilisateur :  **_sudo adduser beatrice sudo_**, sortir du root avec **_exit_**     
 
-ensuite refaire un _sudo apt-get update && sudo apt updrade_   
+ensuite refaire un **_sudo apt-get update && sudo apt updrade_**     
 
 ![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/f584f271-5fd1-4a4c-8dff-7af2e5aa8607)
 
-
-
 ____
+
+Connaître la version de son debian avec **_lsb_release -a_** pour pouvoir après, importer le référentiel et la clé de signature GPG propres à la version :     
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/f0cb7b05-6894-42aa-ba10-ed4213ebc291)
+
+___
+
+
+
 
 Après avoir mis à niveau Ubuntu, vous devrez **ajouter le référentiel Bareos et le fichier clé à votre ordinateur**. Les packages les plus récents seront mis à disposition sur votre machine dès que son référentiel sera ajouté.   
 
