@@ -24,9 +24,16 @@ ___
 
 __
 
-Passer en root pour ajouter un utilisateur pour effectuer les prochaines commandes avec _sudo adduser foo sudo_   
+Faire un _sudo apt-get update && sudo apt upgrade_   
+si refus, passer en root avec la commande _su root_ pour ajouter votre nom d'utilisateur au fichier sudoers de debian pour avoir les droits d'exécuter des commandes   
 
-![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/f8ed7e25-f489-468d-aeec-0a5d81e338f7)
+pour ajouter mon nom d'utilisateur :  _sudo adduser beatrice sudo_   
+
+ensuite refaire un _sudo apt-get update && sudo apt updrade_   
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/f584f271-5fd1-4a4c-8dff-7af2e5aa8607)
+
+
 
 ____
 
