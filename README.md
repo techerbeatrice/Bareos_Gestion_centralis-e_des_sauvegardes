@@ -22,7 +22,7 @@ ___
 
 **Installation du serveur bareos sur une vm debian**  
 
-__
+__  
 
 Faire un **_sudo apt-get update && sudo apt upgrade_**     
 Si refus, passer en root avec la commande **_su root_** pour ajouter votre nom d'utilisateur au **fichier sudoers** de debian pour avoir les droits d'exécuter des commandes   
@@ -41,12 +41,19 @@ Connaître la version de son debian avec **_lsb_release -a_** pour pouvoir aprè
 
 ___
 
-
-
-
-Après avoir mis à niveau Ubuntu, vous devrez **ajouter le référentiel Bareos et le fichier clé à votre ordinateur**. Les packages les plus récents seront mis à disposition sur votre machine dès que son référentiel sera ajouté.   
-
 Exécutez les instructions ci-dessous pour ajouter le référentiel avec les packages et la clé les plus récents :   
+
+Créez le fichier avec la commande suivante :   
+
+**_nano /etc/apt/sources.list.d/bareos.list_**     
+
+Ajoutez le texte suivant dans le fichier puis sauvegardez-le :
+
+**_deb http://download.bareos.org/bareos/release/latest/Debian_12/ /_**     
+
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/1584bc07-2944-4c16-b0e4-39c209157aa2)
+
+____
 
 _sudo sh -c 'echo "deb http://download.bareos.org/bareos/release/latest//xUbuntu_22.04.1 /" >> /etc/apt/sources.list.d/bareos.list'_
 
