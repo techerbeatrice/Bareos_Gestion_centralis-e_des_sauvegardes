@@ -20,17 +20,14 @@ Lancer une sauvegarde sur le client.
 
 ___
 
-**Installation du serveur bareos sur une vm ubuntu 22.04.1**  
+**Installation du serveur bareos sur une vm debian**  
 
 __
 
-**Mettre à jour Ubuntu avant d'installer les packages logiciels. Exécutez les commandes suivantes pour ce faire**    
- 
-_sudo apt update_   
-_sudo apt dist-upgrade_   
-_sudo apt autoremove_   
+Passer en root pour ajouter un utilisateur pour effectuer les prochaines commandes avec _sudo adduser foo sudo_   
 
-Cela devrait mettre Ubuntu à jour et supprimer tous les packages obsolètes de votre système. C'est également une bonne idée de réinitialiser l'ordinateur une fois la mise à jour terminée.
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/f8ed7e25-f489-468d-aeec-0a5d81e338f7)
+
 ____
 
 Après avoir mis à niveau Ubuntu, vous devrez **ajouter le référentiel Bareos et le fichier clé à votre ordinateur**. Les packages les plus récents seront mis à disposition sur votre machine dès que son référentiel sera ajouté.   
