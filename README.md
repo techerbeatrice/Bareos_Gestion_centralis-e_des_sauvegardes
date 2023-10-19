@@ -45,7 +45,7 @@ Exécutez les instructions ci-dessous pour ajouter le référentiel avec les pac
 
 Créez le fichier avec la commande suivante :   
 
-**_nano /etc/apt/sources.list.d/bareos.list_**     
+**_sudo nano /etc/apt/sources.list.d/bareos.list_**     
 
 Ajoutez le texte suivant dans le fichier puis sauvegardez-le :
 
@@ -55,17 +55,20 @@ Ajoutez le texte suivant dans le fichier puis sauvegardez-le :
 
 ____
 
-_sudo sh -c 'echo "deb http://download.bareos.org/bareos/release/latest//xUbuntu_22.04.1 /" >> /etc/apt/sources.list.d/bareos.list'_
+Télécharger la clé et l’ajouter, entrez la commande suivante dans le terminal :
 
-![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/9a82dbc2-825e-4bc5-b075-586b9b5f4af2)
+**_wget -q http://download.bareos.org/bareos/release/latest/Debian_12.0/Release.key -O- | apt-key add --_**
 
 ____
 
 Après avoir ajouté le référentiel, exécutez les instructions suivantes pour **importer la clé GPG du référentiel** :   
 
-_sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add -_  
+**_sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add -_**     
 
-![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/ec25c298-b700-4c08-9630-cec878917d55)
+![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/117d2580-6c14-4f14-83cf-5fc11954e79b)
+
+___
+
 
 S'affiche le message : _apt-key est obsolète_ et _Gérer les fichiers de trousseaux de clés dans trust.gpg.d_  
 
