@@ -57,27 +57,22 @@ ____
 
 Télécharger la clé et l’ajouter, entrez la commande suivante dans le terminal :
 
-**_wget -q http://download.bareos.org/bareos/release/latest/Debian_12.0/Release.key -O- | apt-key add --_**
-
-____
-
-Après avoir ajouté le référentiel, exécutez les instructions suivantes pour **importer la clé GPG du référentiel** :   
-
-**_sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add -_**     
+**_wget -q http://download.bareos.org/bareos/release/latest/Debian_12.0/Release.key -O- | apt-key add --_**  
 
 ![image](https://github.com/techerbeatrice/Bareos_Gestion_centralisee_des_sauvegardes/assets/138071140/117d2580-6c14-4f14-83cf-5fc11954e79b)
 
 ___
 
+S'affiche le message : **_apt-key est obsolète_** et **_Gérer les fichiers de trousseaux de clés dans trust.gpg.d_**    
 
-S'affiche le message : _apt-key est obsolète_ et _Gérer les fichiers de trousseaux de clés dans trust.gpg.d_  
+Ici Debian veut que vous sépariez les clés GPG   
+C'est un message d’avertissement ; « Gérer les fichiers de trousseaux de clés dans trust.gpg.d » et depuis 2020, ajouter une clé GPG pour les dépôts utilisés par apt ne doit plus se faire par le biais de la **_commande _apt-key_** ; celle-ci est déclaré obsolète ET ne doit plus être utilisée ! 
 
-Ici Ubuntu veut que vous sépariez les clés GPG   
-C'est un message d’avertissement ; « Gérer les fichiers de trousseaux de clés dans trust.gpg.d » et depuis 2020, ajouter une clé GPG pour les dépôts utilisés par apt ne doit plus se faire par le biais de la commande _apt-key_ ; celle-ci est déclaré obsolète ET ne doit plus être utilisée ! 
+Debian ne veut pas que vous ajoutiez toutes les clés de signature dans le fichier unique **_/etc/apt/trusted.gpg_**. Il suggère d'utiliser un fichier séparé situé dans le répertoire **_/etc/apt/trusted.gpg.d_**.
 
-Ubuntu ne veut pas que vous ajoutiez toutes les clés de signature dans le fichier unique /etc/apt/trusted.gpg. Il suggère d'utiliser un fichier séparé situé dans le répertoire /etc/apt/trusted.gpg.d.   
+wget -O /usr/share/keyrings/<un-nom>-archive-keyring.gpg https://depot.example.net/debian/<nom-fichier-cle>.gpg
 
-donc nouvelle commande à taper : _sudo wget -q http://download.bareos.org/bareos/release/latest/xUbuntu_22.04.1/Release.key -O- | sudo apt-key add - | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/bareos.gpg_  
+donc nouvelle commande à taper : **_sudo wget -q http://download.bareos.org/bareos/release/latest/xDebian_12.0/Release.key -O- | sudo apt-key add - | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/bareos.gpg_**   
 
 
 ____
